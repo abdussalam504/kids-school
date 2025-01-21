@@ -21,6 +21,7 @@ body {
   font-family: Raleway;
   font-size: 15.34px;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 /* nav style */
@@ -63,6 +64,10 @@ nav {
     background: rgb(254, 163, 1);
     font-family: Quicksand;
     border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background: rgba(254, 161, 1, 0.502);
   }
 }
 nav ul li:nth-child(1) a {
@@ -116,13 +121,19 @@ nav ul li:nth-child(4) a {
     font-weight: 700;
     border-radius: 12px;
     background: rgb(17, 17, 17);
+    cursor: pointer;
   }
+  button:hover{
+    background: rgba(17, 17, 17, 0.598);
+  }
+  
 }
 
 /* curriculum style */
 
 .curriculum {
   background-image: url(../../assets/images/bg.png);
+  background-size: cover;
 
   .curriculum-title {
     text-align: center;
@@ -200,17 +211,217 @@ nav ul li:nth-child(4) a {
       }
     }
   }
-  .icon{
-     text-align: center;
-     margin: 80px 0 60px;
+  .icon {
+    text-align: center;
+    margin-top: 80px;
 
-    i{
-        padding: 17px 19px;
+    i {
+      padding: 17px 19px;
+      color: rgb(255, 255, 255);
+      border-radius: 30px;
+      background: rgb(254, 163, 1);
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+/* stories style */
+
+.stories {
+  background: linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3),
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    url(../../assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+
+  .stories-title {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .big-cart {
+    margin-top: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+
+    background: rgb(255, 255, 255);
+
+    .cart-text {
+      padding: 34px 38px;
+      border-radius: 16px;
+
+      h4 {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38.35px;
+        margin-bottom: 45px;
+      }
+      p {
+        color: rgb(102, 102, 102);
+        font-family: Raleway;
+        font-size: 15.34px;
+        font-weight: 500;
+        line-height: 28.76px;
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 16px 16px 0px 0px;
+      position: relative;
+    }
+    button {
+      background: rgb(60, 216, 232);
+      border: none;
+      position: absolute;
+      margin-top: -60px;
+    }
+  }
+  .small-carts {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+
+    img {
+      border-radius: 16px 16px 0px 0px;
+      position: relative;
+      width: 100%;
+    }
+
+    .cart-text {
+      padding: 33px 37px;
+
+      h5 {
+        color: rgb(0, 0, 0);
+        font-size: 15.34px;
+        font-weight: 700;
+        line-height: 28.76px;
+      }
+
+      button {
+        background: rgb(149, 178, 38);
+        border: none;
+        position: absolute;
+        margin-top: -60px;
+      }
+    }
+  }
+  .small-cart .two button {
+    background: rgb(93, 88, 240);
+  }
+
+  .small-cart {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 19px;
+  }
+
+  .stories-carts {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 19px;
+  }
+  .view-button {
+    text-align: center;
+    button {
+      padding: 10px 60px;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      font-family: Quicksand;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      border-radius: 12px;
+      background: rgb(17, 17, 17);
+      border: none;
+      margin: 80px 0 60px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #250a0a8c;
+    }
+  }
+}
+
+/* foooter style */
+
+footer {
+  background: rgb(1, 172, 253);
+
+  .contant {
+    display: flex;
+    padding: 123px 0 150px;
+    justify-content: space-between;
+    .education {
+      .logo {
+        display: flex;
         color: rgb(255, 255, 255);
-        border-radius: 30px;
-        background: rgb(254, 163, 1);
-        margin-right: 10px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 39.51px;
+
+        h2 {
+          width: 206px;
+          height: 80px;
+          margin-left: 8px;
+        }
+      }
+
+      p {
+        margin-top: 35px;
+        width: 399.02px;
+        height: 100px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+      }
+    }
+
+    .about {
+      .title {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          display: flex;
+          color: rgb(255, 255, 255);
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 25px;
+          list-style: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .social-media {
+      margin-right: 80px;
+      .title {
+        color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 30px;
+      }
+      .icon {
         cursor: pointer;
+      }
     }
   }
 }
