@@ -95,7 +95,7 @@ nav ul li:nth-child(4) a {
   color: rgb(93, 88, 239);
 }
 
-/* bannar sty */
+/* bannar style */
 
 .bannar {
   background: rgb(247, 247, 247);
@@ -455,7 +455,7 @@ footer {
     }
   }
 
-  /* bannar */
+  /* bannar responsive*/
   .bannar-contant {
     display: flex;
     flex-direction: column-reverse;
@@ -480,7 +480,7 @@ footer {
     }
   }
 
-  /* curriculum */
+  /* curriculum respomsive */
   .curriculum-contant {
     .curriculum-title {
       margin-bottom: 20px;
@@ -502,7 +502,7 @@ footer {
     }
   }
 
-  /* stories */
+  /* stories responsive */
 
   .stories-contant {
     .stories-title {
@@ -547,6 +547,8 @@ footer {
       padding: 20px 0 40px;
     }
   }
+
+  /* footer resposove */
 
   footer {
     overflow: hidden;
