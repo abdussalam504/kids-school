@@ -26,6 +26,10 @@ body {
 
 /* nav style */
 
+marquee{
+  padding: 10px;
+}
+
 nav {
   margin: 20px 0;
   display: flex;
